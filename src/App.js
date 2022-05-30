@@ -1,11 +1,30 @@
-limport './App.css';
+import React from 'react';
+import {
+  Typography,
+  AppBar,
+  Card,
+  CardActions,
+  CardContext,
+  CardMedia,
+  CssBaseline,
+  Grid,
+  Toolbar,
+  Container,
+} from '@mui/material';
+import PhotoCameraIcon from '@mui/icons-material/PhotoCamera';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      
-    </div>
+    <>
+      <CssBaseline />
+      <AppBar position='relative'>
+        <Toolbar>
+          <PhotoCameraIcon />
+          <Typography variant='h6'>Photo Album</Typography>
+        </Toolbar>
+      </AppBar>
+    </>
   );
-}
+};
 
 export default App;
